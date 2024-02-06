@@ -1,0 +1,84 @@
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    background-color: #0A3033;
+}
+.container{
+    background-color: white;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0px rgba(255, 255, 255, 0.2);
+}
+.container h2{
+    font-weight: 200;
+    font-size: 32px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.container h2::after{
+    content: '';
+    width: 145px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #0A3033;
+    position:absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container blockquote{
+    font-size: 26px;
+    font-family: 'Playfair Display', serif;
+    min-height: 110px;
+}
+.container blockquote::before, .container blockquote::after{
+    content: '"';
+}
+.container span{
+    display: block;
+    float: right;
+    font-family: 'Playfair Display', serif;
+    margin-top: 10px;
+    position: relative;
+}
+.container span::before{
+    content: '';
+    width: 10px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+}
+.container button{
+    background-color: #0A3033;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid #0A3033;
+    width: 120px;
+    height: 50px;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 5px 5px 15px;
+    cursor: pointer;
+}
+.container button img{
+    width: 20px;
+    margin-right: 10px;
+}
+.container button:nth-child(2){
+    background-color: white;
+    color: #0A3033;
+}
